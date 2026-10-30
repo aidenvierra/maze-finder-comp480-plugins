@@ -1,0 +1,12 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "Can an AI agent find the shortest way out of a maze?"
+summary: "Each puzzle is a text maze, from a small warm-up to a 29 by 17 labyrinth with several routes, and one maze has no way out at all. The agent must find the shortest path from start to goal, or prove there is none, using only 12 tool calls. A breadth-first search checks every answer."
+highlights:
+  - "Only a truly shortest path counts as correct"
+  - "A longer route still earns partial credit"
+  - "One maze has no way out, to test whether the agent can say so"
+steps:
+  - "Pick a maze, maze-01 to maze-06"
+  - "The agent reads the maze and plans a route, testing it with walk"
+  - "It submits its moves, or says the goal cannot be reached"
+  - "The verdict compares its path with the true shortest one"
